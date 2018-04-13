@@ -1,0 +1,60 @@
+body {
+	display: flex;
+	flex-wrap: wrap;
+	background-color:  #151515;
+	width: 100%;
+	overflow: hidden;
+
+}
+html {
+	width: 100%;
+}
+
+.redbox {
+	width: 2vw;
+	height: 4vh;
+	background-color: #151515;
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	top: 0vw;
+	/border-radius: 25% 
+}
+
+.rounded {
+	border-radius: 40%;
+}
+
+.red {
+	color: red;
+}
+
+
+.spinning {
+	animation: spin 3s ease-out infinite;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@keyframes spin {
+  from {
+    /transform:rotate(0deg);
+    background-color: #13ff00;
+    z-index: 99;
+    box-shadow: 0vw 0vw 0px black;
+  }
+  
+  to {
+    /transform:rotate(-180deg);
+    background-color: #151515;
+    padding: 2vw;
+    margin: -2vw;
+    z-index: 99;
+    box-shadow: 0vw 3vw 0px #151515;
+    top: -10vw;
+  }
+}
